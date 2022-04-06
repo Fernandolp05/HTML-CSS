@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body {
+    font: normal 16px Arial, Verdana, serif;
+    text-align: justify;
+    background-color: rgb(241, 218, 187);
+}
+
+h1 {
+    font:  bold 50px Times, Verdana, serif;
+    text-align: left;
+    color: blue;
+}
+
+h1#principal {
+
+    text-align: center;
+    background-color: rgb(200, 165, 233);
+    color: white;
+} /* id = #, só pode ter um por html
+class = ., pode ter varios*/
+
+.basico {
+
+    text-align: center;
+    background-color: chocolate;
+    color: crimson;
+}
+
+.intermediario {
+
+    text-align: center;
+    background-color: fuchsia;
+    color: black;
+}
+
+h2 {
+    font: bold 30px Times, Verdana, serif;
+    text-align: left;
+    color: brown;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.destaque {
+    background-color: rgb(215, 218, 42);
+    color: white;
+}

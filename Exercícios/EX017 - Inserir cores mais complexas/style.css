@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+body {
+    background-image: linear-gradient(to right, #22BABB, #9EF8EE);/*para aplicar gradiente, usar esse comando bckgrdimage, to right to top to bottom, também da para escolher em graus, circle, e etc..*/
+}
+main {
+    background-color: white;
+    border-radius: 15px; /*arredondar a borda */
+    box-shadow: 5px 5px 15px #2a6e6e;
+    width: 600px;/*largura da caixa do meio onde fica o texto*/
+    padding: 15px;/*bordinha da margem da caixa branca onde fica o texto e o texto*/
+    margin: auto;/*margear automaticamente, fica tudo no meio*/
+}
+
+h1 {
+    text-align: center;/*alinhar texto centro da página*/
+    color: #348888;
+    text-shadow: 2px 2px 4px #46b8b862;/*sombrinha no texto*/
+}
+h2 {
+    color: #FA7F08;
+}
+p {
+    border: 1px solid yellow; 
+    text-align: justify;
+} /* border para colocar texto dentro de uma caixa */
+
+
+
+
