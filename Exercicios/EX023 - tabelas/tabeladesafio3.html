@@ -11,7 +11,7 @@
         }
 
         table {
-            width: 500px;
+            width: 700px;
             border-collapse: collapse;
         }
 
@@ -30,69 +30,86 @@
             padding: 10px;
             text-align: center;
         }
+
+        col.cmateria {
+            background-color: brown;
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
     <h1>Tabela desafio 3</h1>
-    <table>
-        <thead>
-            <tr>
-                <th scope="col" rowspan="2" class="gray">Área</th>
-                <th scope="col" rowspan="2" colspan="2" class="gray">Disciplinas</th>
-                <th scope="colgroup" colspan="2" class="gray">Notas</th>
-                <th scope="col" rowspan="2" class="gray">Média</th>
-            </tr>
-            <tr>
-                <th scope="col" class="gray">Nota 1</th>
-                <th scope="col" class="gray">Nota 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <th scope="rowgroup" rowspan="4">Exatas</th>
-            <td colspan="2">Matemática</td>
-            <td>10</td>
-            <td>10</td>
-            <td>10</td>
-            <tr>
-                <td colspan="2">Física</td>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col>
+                <col class="cmateria">
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col" rowspan="2" class="gray">Área</th>
+                    <th scope="col" rowspan="2" colspan="2" class="gray">Disciplinas</th>
+                    <th scope="colgroup" colspan="2" class="gray">Notas</th>
+                    <th scope="col" rowspan="2" class="gray">Média</th>
+                </tr>
+                <tr>
+                    <th scope="col" class="gray">Nota 1</th>
+                    <th scope="col" class="gray">Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td colspan="2">Matemática</td>
                 <td>10</td>
                 <td>10</td>
                 <td>10</td>
-            </tr>
-            <tr>
-                <td colspan="2">Química</td>
-                <td>10</td>
-                <td>10</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td colspan="2">Biologia</td>
-                <td>10</td>
-                <td>10</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <th scope="row" colspan="5" class="gray">Média de Exatas</th>
-                <td class="media"><strong>10</strong></td>
-            </tr>
-            <tr>
-                <th scope="rowgroup" rowspan="2">Humanas</th>
-                <td colspan="2">História</td>
-                <td>10</td>
-                <td>10</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td colspan="2">Geografia</td>
-                <td>10</td>
-                <td>10</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <th scope="row" colspan="5" class="gray">Média de Humanas</th>
-                <td class="media"><strong>10</strong></td>
-            </tr>
-        </tbody>
-    </table>
+                <tr>
+                    <td colspan="2">Física</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Química</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Biologia</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="5" class="gray">Média de Exatas</th>
+                    <td class="media"><strong>10</strong></td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="2">Humanas</th>
+                    <td colspan="2">História</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Geografia</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="5" class="gray">Média de Humanas</th>
+                    <td class="media"><strong>10</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
